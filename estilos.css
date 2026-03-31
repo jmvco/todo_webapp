@@ -28,6 +28,7 @@
 body {
     background-color: #e0dec2;
     padding: 20px;
+   
 }
 
 .parrafo {
@@ -38,6 +39,7 @@ body {
 .main-container {
     display: flex;
     gap: 32px;
+    justify-content: center;
 }
 
 .multimedia {
