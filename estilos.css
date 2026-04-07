@@ -1,53 +1,127 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.botoncito {
-    background-color: rgb(46, 8, 52); /* Green */
-    border-radius: 8px;
-    border: none;
-    color: white;
-    padding: 8px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    cursor: pointer; 
-    outline: none;   
-}
-
-.title {
-    font-family: 'Arial', sans-serif;
-    font-size: 18px;
-    color: #23004b;
-    margin-bottom: 20px;
-}
-
+/* Body */
 body {
     background-color: #e0dec2;
     padding: 20px;
-   
+    font-family: Arial, sans-serif;
+    color: #333;
 }
 
+/* Títulos */
+.title {
+    font-size: 26px;
+    color: #23004b;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 12px;
+    color: #23004b;
+}
+
+h3 {
+    margin-top: 12px;
+    color: #444;
+}
+
+/* Texto */
 .parrafo {
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Layout general */
+.center {
+    display: flex;
+    justify-content: center;  /* centro horizontal */
+    align-items: center;      /* opcional, centro vertical */
+    margin: 20px 0;
 }
 
 .main-container {
     display: flex;
     gap: 32px;
     justify-content: center;
+    flex-wrap: wrap;          /* que se acomoden en pantallas pequeñas */
 }
 
+/* Secciones */
+section, .info-peru, .ciudades-principales {
+    max-width: 500px;
+    flex: 1;                  /* para que se ajusten dentro del main-container */
+}
+
+/* Artículos - Ciudades */
+article, .ciudad {
+    background-color: white;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Imágenes, videos */
 .multimedia {
+    width: 100%;
     height: 250px;
-    width: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 10px;
 }
 
-.center {
+/* Botón */
+.botoncito {
+    background-color: #23004b;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+/* Formulario */
+.form-container {
     display: flex;
     justify-content: center;
+    margin: 20px 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    padding: 16px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Inputs del formulario */
+.form input {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Botón dentro del formulario */
+.form button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #23004b;
+    color: white;
+    cursor: pointer;
+
 }

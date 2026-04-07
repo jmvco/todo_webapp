@@ -1,38 +1,141 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="estilos.css">
-   
-</head>
-<body>
-    <div class="center">
-        <h1 class="title">Hello World, from colombia</h1>
-    </div>
-    <div class="main-container">
-        <div>
-            <p class="parrafo">esta pagina es un parrafo de un texto de una pagina web de prueba</p>
-            <img class="multimedia" src="https://www.callejeandoporelmundo.com/wp-content/uploads/2013/06/plaza-de-armas-de-cuzco-peru.jpg" alt="">
-        </div>
-    
-        <div>
-            <p>Ciudades principales de Perú</p>
-            <ul>
-                <li>Lima</li>
-                <li>Huanuco</li>
-                <li>Arequipa</li>
-                <li>Cuzco</li>
-                <li>Huancavelica</li>
-            </ul>
-            <img class="multimedia" src="https://www.callejeandoporelmundo.com/wp-content/uploads/2013/06/catedral-de-cuzco-plaza-de-armas-peru.jpg"/>
-        </div>
-    </div>
-    <div class="center">
-        <button class="botoncito">Ver más</button>
-    </div>
-</body>
-<script src="app.js"></script>
-</html>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Información básica sobre Perú y sus principales ciudades"
+    />
+    <title>Descubre Perú</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
 
+  <body>
+    <!-- header -->
+    <header class="center">
+      <h1 class="title">Descubre Perú 🇵🇪</h1>
+    </header>
+
+    <!-- main -->
+    <main class="main-container">
+
+      <!-- DIV 1: Sobre Perú -->
+      <div class="info-peru">
+        <h2>Sobre Perú</h2>
+        <p class="parrafo">
+          Perú también es reconocido por sus tradiciones y festividades, que
+          varían según la región. La música, la danza y los trajes típicos son
+          una parte esencial de la identidad peruana.
+        </p>
+        <p class="parrafo">
+          La biodiversidad del país es impresionante. En la selva amazónica se
+          encuentran numerosas especies de flora y fauna, mientras que en la
+          sierra destacan paisajes montañosos y pueblos con arquitectura
+          tradicional.
+        </p>
+        <p class="parrafo">
+          La historia de Perú está marcada por la presencia del Imperio Inca,
+          cuyos vestigios aún se pueden apreciar en sitios arqueológicos como
+          Sacsayhuamán, Ollantaytambo y el famoso Camino Inca.
+        </p>
+        <p class="parrafo">
+          Además de Machu Picchu, Perú ofrece otros destinos turísticos como las
+          Líneas de Nazca, el Lago Titicaca, la ciudad de Arequipa con su
+          majestuosa arquitectura y la costa de Paracas, hogar de la reserva
+          natural de Ballestas.
+        </p>
+
+        <img
+          class="multimedia"
+          src="https://content.r9cdn.net/rimg/dimg/4c/ac/7e6077e1-city-45618-165ce416a23.jpg?crop=true&width=1020&height=498"
+          alt="Vista de Perú"
+        />
+      </div>
+
+      <!-- DIV 2: Ciudades principales -->
+      <div class="ciudades-principales">
+        <h2>Ciudades principales de Perú</h2>
+
+        <div class="ciudad">
+          <h3>Lima</h3>
+          <p>
+            Capital del país y centro económico. Destaca por su gastronomía, su
+            vida urbana y sus vistas al océano Pacífico.
+          </p>
+        </div>
+
+        <div class="ciudad">
+          <h3>Arequipa</h3>
+          <p>
+            Conocida como la "Ciudad Blanca", famosa por su arquitectura y el
+            volcán Misti.
+          </p>
+        </div>
+
+        <div class="ciudad">
+          <h3>Cusco</h3>
+          <p>
+            Antigua capital del Imperio Inca y puerta de entrada a Machu Picchu,
+            uno de los destinos más visitados del mundo.
+          </p>
+        </div>
+
+        <div class="ciudad">
+          <h3>Huánuco</h3>
+          <p>
+            Ciudad tranquila con clima agradable todo el año y rica en historia
+            y naturaleza.
+          </p>
+        </div>
+
+        <div class="ciudad">
+          <h3>Huancavelica</h3>
+          <p>
+            Región andina con gran tradición cultural y paisajes naturales
+            únicos.
+          </p>
+        </div>
+
+        <img
+          class="multimedia"
+          src="https://cdn.bookatrekking.com/data/images/2020/03/shutterstock-163342040-1200w.webp"
+          alt="Catedral de Cusco"
+        />
+      </div>
+    </main>
+
+    <!-- boton Ver más -->
+    <div class="center">
+      <button class="botoncito" id="main_button">Ver más</button>
+    </div>
+
+    <!-- formulario -->
+    <div class="form-container">
+      <form class="form" id="formulario">
+        <h2>Formulario de contacto</h2>
+
+        <label for="nombre">Nombre</label>
+        <input id="nombre" type="text" placeholder="Tu nombre" required />
+
+        <label for="correo">Correo</label>
+        <input id="correo" type="email" placeholder="Tu email" required />
+
+        <label for="password">Contraseña</label>
+        <input
+          id="password"
+          type="password"
+          placeholder="**********"
+          required
+        />
+
+        <label for="fecha">Fecha</label>
+        <input id="fecha" type="date" />
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <!-- script -->
+    <script src="app.js"></script>
+  </body>
+</html>
